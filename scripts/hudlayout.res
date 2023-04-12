@@ -994,9 +994,8 @@
 		"fieldName"				"HudTeamGoal"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-160"
+		"xpos"					"9999"
 		"ypos"					"65"
-		"ypos_lodef"			"75"
 		"wide"					"320"
 		"tall"					"100"
 	}
