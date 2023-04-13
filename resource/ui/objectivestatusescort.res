@@ -232,6 +232,7 @@
 				"ypos"			"82"
 			}
 		}
+	}
 		
 		"EscortItemImage"
 		{
