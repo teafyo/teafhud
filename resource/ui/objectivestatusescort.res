@@ -232,7 +232,7 @@
 				"ypos"			"82"
 			}
 		}
-	}
+
 		
 		"EscortItemImage"
 		{
@@ -473,10 +473,11 @@
 			"scaleImage"	"1"	
 		}
 		
-	"EscortTeardrop"
+		"EscortTeardrop"
 		{
 			"ControlName"							"EditablePanel"
 			"fieldName"								"EscortTeardrop"
 			"xpos"									"9999"
 		}
+	}
 }
