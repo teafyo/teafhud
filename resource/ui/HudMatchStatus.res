@@ -308,7 +308,7 @@
 				"fieldName"		"respawntime"
 				"font"			"Size 12 Shadow"
 				"xpos"			"cs-0.5"
-				"ypos"			"0"
+				"ypos"			"3"
 				"zpos"			"5"
 				"wide"			"f0"
 				"tall"			"12"

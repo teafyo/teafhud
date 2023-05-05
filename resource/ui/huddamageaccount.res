@@ -46,4 +46,37 @@
 		"fgcolor"		"Damage NumbersBG"
 		"font"		"2Damage26"
 	}
+	
+	"DamageAccountLabel"
+	{
+		"ControlName"       "CExLabel"
+		"fieldName"         "DamageAccountLabel"
+		"xpos"              "c-50"
+		"ypos"              "c0"
+		"zpos"              "100"
+		"wide"              "100"
+		"tall"              "50"
+		"visible"           "1"
+		"enabled"           "1"
+		"labelText"         "%metal%"
+		"textAlignment"     "center"
+		"fgcolor"           "HP"
+		"font"              "Damage16"
+	}
+	"DamageAccountLabelShadow"
+	{
+		"ControlName"       "CExLabel"
+		"fieldName"         "DamageAccountLabelShadow"
+		"xpos"              "c-49"
+		"ypos"              "c1"
+		"zpos"              "100"
+		"wide"              "100"
+		"tall"              "50"
+		"visible"           "1"
+		"enabled"           "1"
+		"labelText"         "%metal%"
+		"textAlignment"     "center"
+		"fgcolor"           "BlackTransparent"
+		"font"              "Damage16"
+	}
 }

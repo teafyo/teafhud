@@ -24,6 +24,17 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		"Health30"
+		{
+			"1"
+			{
+				"name"		"Renogare Soft"
+				"tall"		"30"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
 		"Health20"
 		{
 			"1"

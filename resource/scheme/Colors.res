@@ -47,5 +47,6 @@ Scheme
 		"HudOffWhite"							"235 235 235 255"
 		
 		"BlackTransparent"						"0 0 0 200"
+		"LoadingBG"								"50 50 50 255"
 	}
 }
