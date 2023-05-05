@@ -197,6 +197,8 @@
 			"percentage_health_low"				"0.5"
 			"color_portrait_blend_dead_red"		"255 255 255 255"
 			"color_portrait_blend_dead_blue" 	"255 255 255 255"
+			"color_portrait_bg_red_local_player" "BlackTransparent"
+			"color_portrait_bg_blue_local_player" "BlackTransparent"
 			
 			"playername"
 			{
