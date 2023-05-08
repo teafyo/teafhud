@@ -14,6 +14,7 @@
 		{
 			"ControlName"			"EditablePanel"
 			"fieldName"				"BlueScoreBG"
+			"xpos"					"9999"
 			"wide"					"0"
 			"tall"					"0"
 			"visible"				"0"
@@ -30,51 +31,44 @@
 			"enabled"				"0"
 		}
 		
-		"BlueScoreBG2"
+		"BlueBG2"
 		{
-			"ControlName"			"ScalableImagePanel"
-			"fieldName"				"BlueScoreBG2"
+			"ControlName"			"ImagePanel"
+			"fieldName"				"BlueBG2"
 			"xpos"					"105"
 			"ypos"					"27"
-			"zpos"					"2"
-			"wide"					"85"
+			"zpos"					"-15"
+			"wide"					"86"
 			"tall"					"18"
 			"autoResize"			"0"
 			"pinCorner"				"0"
 			"visible"				"1"
 			"enabled"				"1"
-			"image"					"../hud/color_panel_blu"
-			"src_corner_height"		"23"
-			"src_corner_width"		"23"
-			"draw_corner_width"		"3"
-			"draw_corner_height"	"3"
+			"fillcolor"				"TeamBlue"
+			
 		}
 		
-		"RedScoreBG2"
+		"RedBG2"
 		{
-			"ControlName"			"ScalableImagePanel"
-			"fieldName"				"RedScoreBG2"
+			"ControlName"			"ImagePanel"
+			"fieldName"				"RedBG2"
 			"xpos"					"190"
 			"ypos"					"27"
-			"zpos"					"2"
-			"wide"					"84"
+			"zpos"					"-15"
+			"wide"					"86"
 			"tall"					"18"
 			"autoResize"			"0"
 			"pinCorner"				"0"
 			"visible"				"1"
 			"enabled"				"1"
-			"image"					"../hud/color_panel_red"
-			"src_corner_height"		"23"
-			"src_corner_width"		"23"
-			"draw_corner_width"		"3"
-			"draw_corner_height"	"3"
+			"fillcolor"				"TeamRed"
 		}
 		
 		"BlueTeamLabel"
 		{
 			"ControlName"			"CExLabel"
 			"fieldName"				"BlueTeamLabel"
-			"font"					"Veranda12"
+			"font"					"Health12"
 			"fgcolor"				"TanLight"
 			"labelText"				"%blueteamname%"
 			"textAlignment"			"west"
@@ -89,7 +83,7 @@
 			"enabled"				"1"
 			"auto_wide_tocontents"	"1"
 			
-			"pin_to_sibling" "BlueScoreBG2"
+			"pin_to_sibling" "BlueBG2"
 			"pin_corner_to_sibling" "PIN_TOPLEFT"
 			"pin_to_sibling_corner" "PIN_TOPLEFT"			
 		}
@@ -98,7 +92,7 @@
 		{
 			"ControlName"			"CExLabel"
 			"fieldName"				"BlueTeamScore"
-			"font"					"TF248"
+			"font"					"Health44"
 			"fgcolor"				"TanLight"
 			"labelText"				"%blueteamscore%"
 			"textAlignment"			"east"
@@ -118,8 +112,8 @@
 		{
 			"ControlName"			"CExLabel"
 			"fieldName"				"BlueTeamScoreDropshadow"
-			"font"					"TF248"
-			"fgcolor"				"black"
+			"font"					"Health44"
+			"fgcolor"				"BlackTransparent"
 			"labelText"				"%blueteamscore%"
 			"textAlignment"			"east"
 			"xpos"					"103"
@@ -157,7 +151,7 @@
 		{
 			"ControlName"			"CExLabel"
 			"fieldName"				"RedTeamLabel"
-			"font"					"Veranda12"
+			"font"					"Health12"
 			"fgcolor"				"TanLight"
 			"labelText"				"%redteamname%"
 			"textAlignment"			"east"
@@ -172,7 +166,7 @@
 			"enabled"				"1"
 			"auto_wide_tocontents"	"1"
 			
-			"pin_to_sibling" "RedScoreBG2"
+			"pin_to_sibling" "RedBG2"
 			"pin_corner_to_sibling" "PIN_TOPRIGHT"
 			"pin_to_sibling_corner" "PIN_TOPRIGHT"
 		}
@@ -181,7 +175,7 @@
 		{
 			"ControlName"			"CExLabel"
 			"fieldName"				"RedTeamScore"
-			"font"					"TF248"
+			"font"					"Health44"
 			"fgcolor"				"TanLight"
 			"labelText"				"%redteamscore%"
 			"textAlignment"			"west"
@@ -200,8 +194,8 @@
 		{
 			"ControlName"			"CExLabel"
 			"fieldName"				"RedTeamScoreDropshadow"
-			"font"					"TF248"
-			"fgcolor" 				"black"
+			"font"					"Health44"
+			"fgcolor" 				"BlackTransparent"
 			"labelText"				"%redteamscore%"
 			"textAlignment"			"west"
 			"xpos"					"198"
@@ -250,7 +244,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"WinningTeamLabel"
-		"font"						"Veranda12"
+		"font"						"Health12"
 		"fgcolor"					"TanLight"
 		"xpos"						"60"
 		"ypos"						"87"
@@ -272,7 +266,7 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"WinningTeamLabelDropshadow"
 		"font"			"ScoreboardTeamName"
-		"fgcolor"		"black"
+		"fgcolor"		"BlackTransparent"
 		"xpos"			"16"
 		"ypos"			"73"
 		"zpos"			"1"
@@ -292,7 +286,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"AdvancingTeamLabel"
-		"font"						"Veranda12"
+		"font"						"Health12"
 		"fgcolor"					"TanLight"
 		"xpos"						"60"
 		"ypos"						"87"
@@ -329,24 +323,27 @@
 		"enabled"					"0"
 	}
 	
-	"ShadedBar"
+	"ShadedBar2"
 	{
-		"ControlName"				"ScalableImagePanel"
-		"fieldName"					"ShadedBar"
-		"xpos"						"45"
-		"ypos"						"91"
-		"zpos"						"2"
-		"wide"						"200"
-		"tall"						"71"
+		"ControlName"				"ImagePanel"
+		"fieldName"					"ShadedBar2"
+		"xpos"						"60"
+		"ypos"						"89"
+		"zpos"						"-20"
+		"wide"						"171"
+		"tall"						"75"
 		"autoResize"				"0"
 		"pinCorner"					"0"
 		"visible"					"1"
 		"enabled"					"1"
-		"image"						"../hud/color_panel_brown"
-		"src_corner_height"			"23"
-		"src_corner_width"			"23"
-		"draw_corner_width"			"3"
-		"draw_corner_height"		"3"
+		"fillcolor"					"BlackTransparent"
+	}
+	
+	"ShadedBar"
+	{
+		"ControlName"				"ImagePanel"
+		"fieldName"					"ShadedBar"
+		"xpos"						"9999"
 	}
 	
 	"TopPlayersLabel"
@@ -403,7 +400,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player1Name"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"65"
 		"ypos"						"100"
 		"zpos"						"3"
@@ -423,7 +420,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player1Class"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"170"
 		"ypos"						"100"
 		"zpos"						"3"
@@ -441,7 +438,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player1Score"
-		"font"						"Veranda11"
+		"font"						"Health12"
 		"xpos"						"195"
 		"ypos"						"100"
 		"zpos"						"3"
@@ -481,7 +478,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player2Name"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"65"
 		"ypos"						"111"
 		"zpos"						"3"
@@ -501,7 +498,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player2Class"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"170"
 		"ypos"						"111"
 		"zpos"						"3"
@@ -521,7 +518,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player2Score"
-		"font"						"Veranda11"
+		"font"						"Health12"
 		"xpos"						"195"
 		"ypos"						"111"
 		"zpos"						"3"
@@ -561,7 +558,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player3Name"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"65"
 		"ypos"						"122"
 		"zpos"						"3"
@@ -581,7 +578,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player3Class"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"170"
 		"ypos"						"122"
 		"zpos"						"3"
@@ -601,7 +598,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Player3Score"
-		"font"						"Veranda11"
+		"font"						"Health12"
 		"xpos"						"195"
 		"ypos"						"122"
 		"zpos"						"3"
@@ -621,7 +618,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"KillStreakLeaderLabel"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"fgcolor"					"TanLight"
 		"xpos"						"45"
 		"ypos"						"133"
@@ -682,7 +679,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"KillStreakPlayer1Name"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"65"
 		"ypos"						"143"
 		"zpos"						"3"
@@ -702,7 +699,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"KillStreakPlayer1Class"
-		"font"						"Veranda10"
+		"font"						"Health12"
 		"xpos"						"170"
 		"ypos"						"143"
 		"zpos"						"3"
@@ -722,7 +719,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"KillStreakPlayer1Score"
-		"font"						"Veranda11"
+		"font"						"Health12"
 		"xpos"						"185"
 		"ypos"						"143"
 		"zpos"						"3"
@@ -741,7 +738,7 @@
 	{
 		"ControlName"	"CTFBadgePanel"
 		"fieldName"		"Player1Badge"
-		"xpos"			"45"
+		"xpos"			"9999"
 		"ypos"			"100"
 		"zpos"			"3"
 		"wide"			"17"
@@ -749,13 +746,13 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 	}
 	"Player2Badge"
 	{
 		"ControlName"	"CTFBadgePanel"
 		"fieldName"		"Player2Badge"
-		"xpos"			"45"
+		"xpos"			"9999"
 		"ypos"			"111"
 		"zpos"			"3"
 		"wide"			"17"
@@ -763,13 +760,13 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 	}
 	"Player3Badge"
 	{
 		"ControlName"	"CTFBadgePanel"
 		"fieldName"		"Player3Badge"
-		"xpos"			"45"
+		"xpos"			"9999"
 		"ypos"			"122"
 		"zpos"			"3"
 		"wide"			"17"
@@ -777,13 +774,13 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 	}
 	"KillStreakPlayer1Badge"
 	{
 		"ControlName"	"CTFBadgePanel"
 		"fieldName"		"KillStreakPlayer1Badge"
-		"xpos"			"45"
+		"xpos"			"9999"
 		"ypos"			"143"
 		"zpos"			"3"
 		"wide"			"17"
@@ -791,6 +788,6 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 	}
 }

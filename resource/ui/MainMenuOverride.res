@@ -1,3 +1,5 @@
+#base "../../resource/scheme/vtf preload.res"
+
 "Resource/UI/MainMenuOverride.res"
 {
 	MainMenuOverride
